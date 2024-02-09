@@ -1,0 +1,239 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto Medium";
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+#main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(0, 0, 0);
+    position: relative;
+    /* overflow: hidden; */
+
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+}
+
+.glass-panel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+    position: absolute;
+    color: #fff;
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.048);
+    border: 1px solid rgba(48, 48, 48, 0.295);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 15px;
+    padding: 30px;
+    backdrop-filter: blur(10px);
+    z-index: 999;
+}
+
+.glass-button {
+    display: block;
+    padding: 20px 25px;
+    border: 0;
+    text-decoration: none;
+    border-radius: 15px;
+    background-color: rgba(54, 54, 54, 0.774);
+    border: 1px solid rgba(22, 22, 22, 0.986);
+    backdrop-filter: blur(30px);
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    letter-spacing: 2px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: all ease .3s;
+}
+
+.glass-button:hover {
+    background-color: rgba(12, 12, 12, 0.575)
+}
+
+
+
+#plet {
+    height: 80vh;
+    width: 81%;
+    background-color: #4b4b4b;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0px 0px 200px 0.1px #747474;
+    border: 2px solid #000000;
+}
+
+#ptop {
+    position: relative;
+    display: flex;
+    padding: 0 24vw;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100px;
+    background-color: rgb(34, 34, 34);
+}
+
+.elem {
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1vw;
+}
+
+.elem h2 {
+    font-size: 1.8vw;
+    font-weight: 200;
+    color: #bbb;
+
+}
+
+.box {
+    width: 2.9vw;
+    height: 2.9vw;
+    background-color: #999898;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1vw;
+    font-size: 20px;
+    font-weight: 800;
+    box-shadow: 0px 0px 10px 0.1px #bbb;
+    /* border: 2px solid #000000; */
+}
+
+#pbtm {
+    width: 100%;
+    /* height: 100%; */
+    height: calc(100%-100px);
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    background-size: cover;
+    background-position: 0% 20%;
+
+}
+#pbtm h1{
+    /* background-color: #fff; */
+    line-height: 4vw;
+    font-size: 2.5vw;
+    margin-top: 10vw;
+    text-align: center;
+}
+
+.bubble {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.8vw;
+    height: 2.8vw;
+    background-color: #c5c4c4;
+    border-radius: 50%;
+    font-size: 19px;
+    font-weight: 600;
+    transition: all ease 0.5s;
+    box-shadow: 0px 0px 5px 0.1px #a3a3a3;
+    border: 0.1px solid #000000;
+    overflow: hidden;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+}
+
+.bubble:hover {
+    background-color: #000000;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+
+
+
+@media (max-width:450px) {
+
+    #main {
+        height: 100%;
+        width: 100%;
+    }
+
+    #plet {
+        width: 90%;
+        height: 93%;
+        padding-bottom: 1vw;
+    }
+
+    #ptop {
+        padding: 0 4vw;
+        height: 83px;
+    }
+
+    .elem {
+        justify-content: space-between;
+        gap: 1.5vw;
+    }
+
+    .elem h2 {
+        font-size: 4vw;
+        font-weight: 900;
+        letter-spacing: 1px;
+        color: #ffffff;
+
+    }
+
+    .box {
+        width: 12vw;
+        height: 11vw;
+        background-color: #999898d2;
+        border-radius: 2vw;
+        font-size: 25px;
+        box-shadow: 0px 0px 4px 0.1px #777777;
+    }
+
+    #pbtm {
+        gap: 16px;
+    }
+
+    #pbtm h1{
+        background:linear-gradient(#4b4b4b,#ffffff5e,#4b4b4b);
+        line-height: 9vw;
+        font-size: 5.5vw;
+        margin-top: 30vw;
+        text-align: center;
+        border-radius: 30px;
+        padding: 5vw 10vw;
+    }
+
+    .bubble {
+        width: 10.1vw;
+        height: 10.1vw;
+        border-radius: 50%;
+        font-size: 20px;
+        font-weight: 900;
+    }
+
+
+}
